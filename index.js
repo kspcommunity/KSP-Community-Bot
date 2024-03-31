@@ -1,4 +1,5 @@
 // Import necessary modules and dependencies
+const { spawn } = require('child_process');
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const { config } = require('dotenv');
 const fs = require('fs');
@@ -17,7 +18,6 @@ log(`Version: ${packageJson.version}`);
 log(`Description: ${packageJson.description}`);
 log(`Author: ${packageJson.author}`);
 log(`License: ${packageJson.license}`);
-
 
 // Create a Discord client
 const bot = new Client({
@@ -80,6 +80,10 @@ bot.once('ready', async () => {
       await bot.application.commands.create(command.data);
       log(`Registered command: ${command.data.name}`);
     }
+
+    // Run server.js as a child process
+    const serverProcess = spawn('node', ['server.js'], { detached: true, stdio: 'ignore' });
+    serverProcess.unref(); // Unreference the child process so it can run independently
 
   } catch (error) {
     log(`Error during bot setup: ${error.message}`, 'error');
