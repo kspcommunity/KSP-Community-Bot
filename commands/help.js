@@ -30,7 +30,7 @@ module.exports = {
       const embed = {
         title: 'Available Commands',
         fields: fields,
-        color: 0x2463422,
+        color: 2463422,
         footer: {
           text: 'KSP Community',
           icon_url: 'attachment://footer_icon.png',

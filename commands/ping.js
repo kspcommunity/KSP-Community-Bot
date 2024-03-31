@@ -16,7 +16,7 @@ module.exports = {
       // Edit the original response with bot performance and ping information as an embed
       await interaction.editReply({
         embeds: [{
-          color: 0x2463422,
+          color: 2463422,
           fields: [
             { name: 'Ping', value: `${ping}ms`, inline: true },
           ],

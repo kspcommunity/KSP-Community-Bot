@@ -27,12 +27,12 @@ async function execute(interaction) {
       { name: 'Author', value: author, inline: true },
       { name: 'License', value: license, inline: true },
       { name: 'Author Site', value: authorSite },
-      { name: 'EraNodes Sites', value: companySite.join('\n') },
+      { name: 'KSPCommunity Sites', value: companySite.join('\n') },
       { name: 'GitHub Repository', value: `[GitHub Repo](${githubRepo})` },
     ],
-    color: 0x2463422,
+    color: 2463422,
     footer: {
-      text: 'EraNodes',
+      text: 'KSP Community',
       icon_url: 'attachment://footer_icon.png',
     },
   };
