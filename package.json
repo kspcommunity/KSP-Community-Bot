@@ -1,0 +1,24 @@
+{
+  "name": "ksp-community-bot",
+  "version": "1.0.0",
+  "description": "The KSP Community discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ksp"
+  ],
+  "author": "g9militantsYT",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^1.7.0",
+    "axios": "^1.6.8",
+    "date-fns": "^3.6.0",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
